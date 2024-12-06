@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API WITH PHP USING MYSQL & SQLSERVER</title>
-</head>
-<body>
-    HERE SHARE INFORMATION ABOUT API-REST
-    <form action="click">
-        <a href="texto"></a>
-        <button id="button">Click</button>
-    </form>
-</body>
-</html>
+<?php
+    require_once "models/Cliente.php";
+
+    switch ($_SERVER['REQUEST_METHOD']) {
+        case 'GET':
+            if(isset($_GET['id'])){
+                echo json_encode(Cliente::getWhere($_GET['id']));
+            }
+            else {
+                //$cliente = new Cliente();
+                echo json_encode(Cliente::getAll());  
+                //echo 'Este es el metodo GET';
+            }
+            break;
+
+        default:
+            break;
+    }
