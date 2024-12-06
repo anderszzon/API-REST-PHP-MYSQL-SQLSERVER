@@ -7,5 +7,9 @@
 </head>
 <body>
     HERE SHARE INFORMATION ABOUT API-REST
+    <form action="click">
+        <a href="texto"></a>
+        <button id="button">Click</button>
+    </form>
 </body>
 </html>
