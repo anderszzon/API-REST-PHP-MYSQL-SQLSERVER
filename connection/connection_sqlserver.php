@@ -1,7 +1,7 @@
 <?php
 // Configuración de la base de datos
-$serverName = "DESKTOP-8AP7VUU";
-$database = "apirest_sqlserver";
+$serverName = "DESKTOP-TRMSOQ9\SQLEXPRESS";
+$database = "apirest";
 $uid = "";
 $pass = "";
 
@@ -30,7 +30,11 @@ if ($stmt == false) {
 }
 
 while ($obj = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
+    echo $obj['id'] . '</br>';
     echo $obj['nombre'] . '</br>';
+    echo $obj['ap'] . '</br>';
+    echo $obj['am'] . '</br>';
+    echo $obj['genero'] . '</br>';
 }
 
 sqlsrv_free_stmt($stmt);

@@ -1,7 +1,7 @@
 <?php
 // Configuración de la base de datos
-$host = 'DESKTOP-8AP7VUU';         // Servidor de la base de datos (puede ser una IP o hostname)
-$dbname = 'apirest_sqlserver';     // Nombre de la base de datos
+$host = 'DESKTOP-TRMSOQ9\SQLEXPRESS';         // Servidor de la base de datos (puede ser una IP o hostname)
+$dbname = 'apirest';     // Nombre de la base de datos
 $username = '';       // Usuario de la base de datos
 $password = '';    // Contraseña del usuario
 
