@@ -1,6 +1,6 @@
 <?php
 // Configuración de la base de datos
-$serverName = "DESKTOP-TRMSOQ9\SQLEXPRESS";
+$serverName = "DESKTOP-8AP7VUU";
 $database = "apirest";
 $uid = "";
 $pass = "";
